@@ -1,0 +1,43 @@
+{
+	"compilerOptions": {
+		// Target and Module Configuration
+		"target": "es2020",
+		"module": "esnext",
+		"lib": ["es2020", "dom"],
+		"moduleResolution": "node",
+
+		// Emit Configuration
+		"outDir": "dist",
+		"declaration": true,
+		"declarationDir": "dist",
+		"sourceMap": true,
+		"removeComments": false,
+		"importHelpers": true,
+
+		// Type Checking
+		"strict": true,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"strictFunctionTypes": true,
+		"strictBindCallApply": true,
+		"strictPropertyInitialization": true,
+		"noImplicitThis": true,
+		"alwaysStrict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+
+		// Module Resolution
+		"baseUrl": ".",
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"resolveJsonModule": true,
+
+		// Advanced
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": true,
+		"isolatedModules": true,
+		"preserveConstEnums": true
+	}
+}

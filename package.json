@@ -1,0 +1,53 @@
+{
+	"name": "butternut-utils",
+	"version": "1.0.0",
+	"main": "dist/index.js",
+	"module": "dist/index.esm.js",
+	"types": "dist/index.d.ts",
+	"sideEffects": false,
+	"license": "MIT",
+	"engines": {
+		"node": ">=20.x"
+	},
+	"scripts": {
+		"build": "rollup -c",
+		"test": "jest",
+		"lint": "eslint src/**/*.ts",
+		"prepare": "npm run build"
+	},
+	"exports": {
+		".": {
+			"import": "./dist/index.esm.js",
+			"require": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		},
+		"./string": {
+			"import": "./dist/string/index.esm.js",
+			"require": "./dist/string/index.js",
+			"types": "./dist/string/index.d.ts"
+		},
+		"./types": {
+			"import": "./dist/types/index.esm.js",
+			"require": "./dist/types/index.js",
+			"types": "./dist/types/index.d.ts"
+		}
+	},
+	"files": [
+		"dist",
+		"dist/**/*.d.ts"
+	],
+	"devDependencies": {
+		"@babel/core": "^7.23.0",
+		"@babel/preset-env": "^7.22.20",
+		"@babel/preset-typescript": "^7.23.0",
+		"@rollup/plugin-typescript": "^11.1.5",
+		"@semantic-release/changelog": "^6.0.3",
+		"@semantic-release/git": "^10.0.1",
+		"@types/jest": "^29.5.5",
+		"jest": "^29.7.0",
+		"rollup": "^4.1.0",
+		"semantic-release": "^22.0.0",
+		"tslib": "^2.6.2",
+		"typescript": "^5.2.2"
+	}
+}
