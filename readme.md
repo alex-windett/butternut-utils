@@ -11,8 +11,12 @@ You will need to have a GitHub token in an `.npmrc` file in the root of your pro
 `yarn install @butternut-utils`
 
 ```ts
-import { toLocalisedSentence } from '@butternut-utils/string/localisedSentance';
+import { toLocalisedSentence } from '@butternut-utils';
+// or
+import toLocalisedSentence from '@butternut-utils/string/localisedSentance';
+
 import { toLocalisedSentenceParams } from '@butternut-utils/types/language';
+
 const params: toLocalisedSentenceParams = {
 	arr: ['Hello', 'World'],
 	lng: 'en',
