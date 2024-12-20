@@ -1,9 +1,9 @@
 {
 	"compilerOptions": {
 		// Target and Module Configuration
-		"target": "es2020",
-		"module": "esnext",
-		"lib": ["es2020", "dom"],
+		"target": "esnext",
+		"module": "commonjs",
+		"lib": ["ES2020"],
 		"moduleResolution": "node",
 
 		// Emit Configuration
